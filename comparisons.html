@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comparisons</title>
+    <!-- Bootstrap and Bootswatch CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css" integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS for Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html"><img src="data:image/png;base64,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"
+                height="50px" width="80px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Welcome</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="plots/cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="plots/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="plots/temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="plots/windspeed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top:5%">
+            <div class="col-md-12" style="border: 5px solid black;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Comparison: Latitude vs X</h1>
+                            <hr>
+                            <h6>Click an image below for an in-depth view:</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Temperature</h3>
+                            <a href="plots/temperature.html"><img src="assets/images/Fig1.png" style="width: 100%;"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Humidity</h3>
+                            <a href="plots/humidity.html"><img src="assets/images/Fig2.png" style="width: 100%;"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Cloudiness</h3>
+                            <a href="plots/cloudiness.html"><img src="assets/images/Fig3.png" style="width: 100%;"></a>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Wind Speed</h3>
+                            <a href="plots/windspeed.html"><img src="assets/images/Fig4.png" style="width: 100%;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
